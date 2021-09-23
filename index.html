@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de Contactos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+  </head>
+  <body>
+    <script src='./script.js'></script>
+    <main class="content">
+      <h1 class="main-title">Mi lista de Contactos</h1>
+      <div class="container">
+        <div class="actions-container">
+          <section class="action-section">
+            <h3>Nuevo Contacto</h3>
+            <form class="action-form" id="create-contact-form">
+              <label for="new-contact-id" class="form-label">id:
+                <input type="number" id="new-contact-id" name="new-contact-id">
+              </label>
+              <label for="new-contact-name" class="form-label">Nombre:
+                <input type="text" id="new-contact-name" name="new-contact-name">
+              </label>
+              <button type="submit" class="form-button">Crear</button>
+            </form>
+          </section>      
+          <section class="action-section">
+            <h3>Agregar Contacto</h3>
+            <form class="action-form" id="complete-contact-form">
+              <label for="complete-contact-id" class="form-label">id:
+                <input type="text" id="complete-contact-id" name="complete-contact-id" required>
+              </label>
+              <button type="submit" class="form-button">Agregar</button>
+            </form>
+          </section>
+          <section class="action-section">
+            <h3>Eliminar Contacto</h3>
+            <form class="action-form" id="delete-contact-form">
+              <label for="delete-contact-id" class="form-label">id:
+                <input type="text" id="delete-contact-id" name="delete-contact-id" required>
+              </label>
+              <button type="submit" class="form-button">Eliminar</button>
+            </form>
+          </section>
+        </div>
+        <section class="list-container">
+          <h2>Lista de Contactos</h2>
+          <table class="task-list">
+            <thead class="list-head">
+              <tr class="list-row">
+                <th class="list-head-item">Id</th>
+                <th class="list-head-item">Nombre</th>
+                <th class="list-head-item">Estado</th>
+              </tr>
+            </thead>
+            <tbody id="list-body">
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
