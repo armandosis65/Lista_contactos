@@ -97,12 +97,12 @@ function removeDOMTasks() {
   }
 }
 
-    get_localstorage();
+get_localstorage();
 
-  function get_localstorage(){
+function get_localstorage(){
 
-    if (localStorage.getItem("tareas")){
-      let name = JSON.parse(localStorage.getItem("tareas"));
+    if (localStorage.getItem("lista_contactos")){
+      let name = JSON.parse(localStorage.getItem("lista_contactos"));
       console.log(name); 
     }  else{
         console.log("No hay contactos en el localstore");}  
